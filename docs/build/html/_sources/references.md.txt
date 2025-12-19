@@ -166,5 +166,7 @@ Zhang, Q.-Z. et al. (2024) [“Analysis of hydrogen supply and demand in China�
 
 ZHAO Zedong, LI Jiaxuan, and LI Yuanye (2025) [“Practice of Low-Carbon Production in Modern Long-Process Steel Enterprises,”](https://doi.org/10.13589/j.cnki.yjdl.2025.04.002) Metallurgical Power, (4), pp. 83–87.
 
+LI Shiyu, WANG Zanfeng, ZHOU Wenji, LIN Anlan, and REN Hongtao (2025) [“Provincial employment effects of coal mine retirement in China's carbon-neutral transition,”](https://www.sciencedirect.com/science/article/pii/S0301421525005452) Energy Policy, 210, 115038.
+
 
 </div>

@@ -1,6 +1,6 @@
 # 4. Iron and steel module: RMC|Steel
 
-The RUC-MESSAGEix-China|Steel (RMC|Steel) model is the steel-industry module within the RMC model family. It is designed to analyze the evolution of supply and demand, technological composition, energy structure, and the demand for specific energy carriers (such as hydrogen) in China’s steel industry during its low-carbon transition. The model covers 31 provincial-level administrative regions in mainland China. It incorporates, in a bottom-up manner, the major production processes and key technological details of the steel sector, and has been calibrated using empirical historical data on production capacity, output, and technology costs.
+RMC|Steel is a sectoral module within the RMC model family that models the low-carbon transition of China's iron and steel industry. It is designed to analyze the evolution of supply and demand, technological composition, energy structure, and the demand for specific energy carriers (such as hydrogen) in China’s steel industry during its low-carbon transition. The module is also implemented in MESSAGEix and covers 31 provincial-level administrative regions as in the RMC main model. It incorporates, in a bottom-up manner, the major production processes and key technological details of the steel sector, and has been calibrated using empirical historical data on production capacity, output, and technology costs.
 
 ## 4.1. Model structure
 
