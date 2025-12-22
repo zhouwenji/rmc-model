@@ -1,6 +1,6 @@
 # Publications
 
-A selection of peer-reviewed studies and research initiatives utilizing the RMC series model is presented below.
+A selection of peer-reviewed studies and research initiatives utilizing the RMC series models is presented below.
 
 - Shiyu Li, Zanfeng Wang, Wenji Zhou*, Anlan Lin, Hongtao Ren*. **['Provincial employment effects of coal mine retirement in China's carbon-neutral transition.'](https://doi.org/10.1016/j.enpol.2025.115038)** _Energy Policy_, 210, 115038 (2026).
 
