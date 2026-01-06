@@ -2,7 +2,7 @@
 
 ## 1.1. Background
 
-The RUC-MESSAGEix-China (RMC) model is an energy-economy-environment (E3) model for China based on the open-source modeling framework MESSAGEix ([IIASA ECE Programme, 2020](./references.md)). It is co-developed and maintained by Prof. Zhou Wenji’s group at the School of Applied Economics, Renmin University of China (RUC), and Prof. Ren Hongtao at the School of Business, East China University of Science and Technology (ECUST).
+The RUC-MESSAGEix-China (RMC) model is an energy-economy-environment (E3) model for China based on the open-source modeling framework MESSAGEix ([IIASA ECE Programme, 2020](./references.md)). It is co-developed and maintained by the group of Prof. Zhou Wenji (email: zhouwenji@ruc.edu.cn) at the School of Applied Economics, Renmin University of China (RUC), and Prof. Ren Hongtao (email: ren@ecust.edu.cn) at the School of Business, East China University of Science and Technology (ECUST).
 
 ## 1.2. Basic principles
 
