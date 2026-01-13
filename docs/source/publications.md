@@ -19,5 +19,7 @@ Spillover Effects on the Capital Market in mainland China and Hong Kong' (Grant 
 
 - National Natural Science Foundation of China (NSFC), 2022-2026. 'System coupling of renewable energy accommodation and hydrogen chemical industry and the synergistic decarbonization pathway' (Grant No.7227041030, PI: Prof. Wenji Zhou)
 
+- National Natural Science Foundation of China (NSFC), 2022-2026. 'Carbon peaking and neutrality goal and the coordinated development of resources, environment and economy in China' (Grant No.72141308, PI: Prof. Xinye Zheng)
+
 - National Natural Science Foundation of China (NSFC), 2023-2025. 'Research on the multi-dimensional regionally heterogeneous impacts
-from the energy transition under carbon neutrality target and its countermeasures' (Grant No.7224100340, sub-project leader: Prof. Wenji Zhou)
+from the energy transition under carbon neutrality target and its countermeasures' (Grant No.7224100340, PI: Prof. Xi Lu, sub-project leader: Prof. Wenji Zhou)
