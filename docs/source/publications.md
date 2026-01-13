@@ -12,10 +12,10 @@ A selection of peer-reviewed studies and research initiatives utilizing the RMC 
 
 ## Research projects
 
+- Key Program of the National Social Science Fund of China (NSSFC), 2026-2028. 'The impact of modern industrial system development on the construction of a new energy system and the corresponding countermeasures' (No.25AZD032)
+
 - National Natural Science Foundation of China (NSFC), 2024-2027. 'Asset-stranding Risks on Energy Firms under the Carbon Neutrality Goals and
 Spillover Effects on the Capital Market in mainland China and Hong Kong' (No.7231101026)
-
-- Key Program of the National Social Science Fund of China (NSSFC), 2026-2028. 'The impact of modern industrial system development on the construction of a new energy system and the corresponding countermeasures' (No.25AZD032)
 
 - National Natural Science Foundation of China (NSFC), 2022-2026. 'System coupling of renewable energy accommodation and hydrogen chemical industry and the synergistic decarbonization pathway' (No.7227041030)
 
