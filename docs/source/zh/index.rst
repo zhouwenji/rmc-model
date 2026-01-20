@@ -18,13 +18,13 @@ RUC-MESSAGEix-China (RMC) 模型是基于开源建模框架 MESSAGEix 开发的�
    :maxdepth: 2
    :caption: 目录
    
-   模型概述 <chap1>
-   chap2
-   chap3
-   chap4
-   chap5
-   publications
-   references
+   ./chap1
+   ./chap2
+   ./chap3
+   ./chap4
+   ./chap5
+   ./publications
+   ./references
 
 
-`PDF version-en (2025 Oct updated) <_static/2025.10.23-RMC-documentation-cn.pdf>`_
+`PDF version-cn (2025 Oct updated) <_static/2025.10.23-RMC-documentation-cn.pdf>`_
