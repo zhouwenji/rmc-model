@@ -18,7 +18,7 @@ align: center
 
 模型中省级层面的未来经济增长路径基于相关文献中的 GDP 预测（[Bai and Zhang, 2017; Leimbach et al., 2017; Christensen, Gillingham and Nordhaus, 2018; Pan et al., 2020; Jing et al., 2022; Yang et al., 2024](./references.md)）。根据对人口和 GDP 规模的预测，可进一步计算出未来不同区域的人均 GDP 变化情况。到本世纪末，全国人均收入预计将超过 10 万美元，超过 2020 年的 10 倍。{ref}`图 3-2 <Fig. 3-2>` 和{ref}`图 3-3 <Fig. 3-3>` 显示，各省未来将实现显著的经济增长，但不同地区的经济并不完全趋同，省份之间的经济发展水平差异仍然存在。
 
-```{figure} _static/fig_3_2.png
+```{figure} ../_static/fig_3_2.png
 ---
 name: Fig. 3-2
 align: center
@@ -26,7 +26,7 @@ align: center
 图 3-2：2020-2100 年中国分省 GDP 变化趋势
 ```
 
-```{figure} _static/fig_3_3.png
+```{figure} ../_static/fig_3_3.png
 ---
 name: Fig. 3-3
 align: center
