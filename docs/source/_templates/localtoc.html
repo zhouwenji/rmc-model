@@ -1,0 +1,27 @@
+<div class="local-toc">
+{% if 'zh/' in pagename or pagename. startswith('zh') %}
+  {# 中文页面显示中文导航 #}
+  <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+  <ul>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap1') }}">1. 模型概述</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap2') }}">2. 参考能源系统</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap3') }}">3. 社会经济因素</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap4') }}">4. 钢铁模块：RMC|Steel</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap5') }}">5. 交通模块：RMC|Transport</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/publications') }}">发表论文与研究项目</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/references') }}">参考文献</a></li>
+  </ul>
+{% else %}
+  {# 英文页面显示英文导航 #}
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+  <ul>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('chap1') }}">1. Overview</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('chap2') }}">2. The Reference Energy System</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('chap3') }}">3. Socio-economic drivers</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('chap4') }}">4. Iron and steel module: RMC|Steel</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('chap5') }}">5. Transport module: RMC|Transport</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('publications') }}">Publications & Research projects</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('references') }}">References</a></li>
+  </ul>
+{% endif %}
+</div>
