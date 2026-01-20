@@ -59,6 +59,12 @@ html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
+# RTD 主题配置
+html_theme_options = {
+    'navigation_depth': 4,
+    'collapse_navigation': False,
+    'titles_only':  False,
+}
 
 import sys
 from pathlib import Path
@@ -71,13 +77,3 @@ project_root = current_dir.parent.parent
 sys.path.insert(0, str(project_root))
 # # 如果你的模型代码在项目下的某个子目录，例如 'src'，也可以单独添加
 # sys.path.insert(0, str(project_root / 'src'))
-
-# -- 自定义侧边栏配置 -------------------------------------------------
-# 根据页面路径动态显示中文或英文导航
-html_sidebars = {
-    '**': [
-        'localtoc.html',
-        'relations.html',
-        'searchbox.html',
-    ]
-}
