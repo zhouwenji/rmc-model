@@ -1,18 +1,3 @@
-.. RMC documentation master file, created by
-   sphinx-quickstart on Mon Oct 13 23:06:04 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-..  raw:: html
-
-   <p align="right">
-     <a href="index.html">
-       <img src="https://img.shields.io/badge/lang-English-blue?style=for-the-badge" alt="English">
-     </a>
-     <a href="zh/index.html">
-       <img src="https://img.shields.io/badge/lang-中文-red?style=for-the-badge" alt="中文">
-     </a>
-   </p>
 
 Welcome to RUC-MESSAGEix-China (RMC) documentation!
 ====================================================
