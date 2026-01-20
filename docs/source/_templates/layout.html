@@ -1,6 +1,28 @@
 {# 继承原始的 RTD 主题模板 #}
 {% extends "!layout.html" %}
 
+{# 在页面内容顶部添加语言切换按钮 #}
+{% block body %}
+<p align="right" style="margin-bottom: 1em;">
+  {% if 'zh/' in pagename or pagename. startswith('zh') %}
+    <a href="{{ pathto(pagename. replace('zh/', '')) }}">
+      <img src="https://img.shields.io/badge/lang-English-blue?style=for-the-badge" alt="English">
+    </a>
+    <a href="{{ pathto(pagename) }}">
+      <img src="https://img.shields.io/badge/lang-中文-red?style=for-the-badge" alt="中文">
+    </a>
+  {% else %}
+    <a href="{{ pathto(pagename) }}">
+      <img src="https://img.shields.io/badge/lang-English-blue? style=for-the-badge" alt="English">
+    </a>
+    <a href="{{ pathto('zh/' + pagename) }}">
+      <img src="https://img.shields.io/badge/lang-中文-red?style=for-the-badge" alt="中文">
+    </a>
+  {% endif %}
+</p>
+{{ super() }}
+{% endblock %}
+
 {# 覆盖导航菜单块 #}
 {% block menu %}
   {% if 'zh/' in pagename or pagename. startswith('zh') %}
@@ -11,7 +33,7 @@
       <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap3') }}">3. 社会经济因素</a></li>
       <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap4') }}">4. 钢铁模块：RMC|Steel</a></li>
       <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap5') }}">5. 交通模块：RMC|Transport</a></li>
-      <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/publications') }}">发表论文与研究项目</a></li>
+      <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/publications') }}">相关论文发表与研究项目</a></li>
       <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/references') }}">参考文献</a></li>
     </ul>
   {% else %}
