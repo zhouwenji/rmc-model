@@ -6,7 +6,7 @@ RMC|Transport 是 RMC 模型家族聚焦于交通部门的模块，用于分析�
 
 如{ref}`图 5-1 <Fig. 5-1>` 所示，RMC|Transport 主要覆盖道路交通部门（未来将拓展至航运、铁路等其他交通部门），包括私人汽车交通、公路营运汽车交通、公共服务汽车交通、其他道路交通。模型涉及的能源品种包括汽油、柴油、电能、氢能、天然气和其它替代燃料。
 
-```{figure} ../_static/fig_5_1.png
+```{figure} ../_static/fig_5_1_zh.png
 ---
 name: Fig. 5-1
 align: center
@@ -82,7 +82,7 @@ align: center
 
 私人载客汽车的选择受多种因素驱动，主要包括车辆购置价格、百公里耗能经济成本、续航里程和补能便捷性等。这些因素共同塑造消费者的决策行为，其相互关系如图{ref}`图 5-3 <Fig. 5-3>`。
 
-```{figure} _static/fig_5_3.png
+```{figure} _static/fig_5_3_zh.png
 ---
 name: Fig. 5-3
 align: center
