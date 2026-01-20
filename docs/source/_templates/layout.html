@@ -25,7 +25,7 @@
 
 {# 覆盖导航菜单块 #}
 {% block menu %}
-  {% if 'zh/' in pagename or pagename. startswith('zh') %}
+  {% if 'zh/' in pagename or pagename.startswith('zh') %}
     {# 中文页面显示中文导航 #}
     <ul>
       <li class="toctree-l1"><a class="reference internal" href="{{ pathto('zh/chap1') }}">1. 模型概述</a></li>
