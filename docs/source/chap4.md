@@ -37,7 +37,7 @@ The input–output relationships among these major processes and technologies ar
 ```{table} Table 4-1: RMC|Steel main technology input and output.
 :name: Table 4-1
 
-| Technology | Imput | Output |
+| Technology | Input | Output |
 | :--- | :--- | :--- |
 | BF | coke, elec, raw iron, qklime | molten iron |
 | DRI | h2, raw iron | sponge iron |
