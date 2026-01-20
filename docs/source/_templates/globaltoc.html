@@ -1,0 +1,37 @@
+{#
+  This template overrides the default globaltoc.html in sphinx_rtd_theme
+  to display Chinese navigation when viewing Chinese pages.
+#}
+
+{% if 'zh/' in pagename or pagename. startswith('zh') %}
+  {# 中文页面显示中文导航 #}
+  <ul>
+    <li class="toctree-l1">
+      <a class="reference internal" href="{{ pathto('zh/chap1') }}">1. 模型概述</a>
+    </li>
+    <li class="toctree-l1">
+      <a class="reference internal" href="{{ pathto('zh/chap2') }}">2. 参考能源系统</a>
+    </li>
+    <li class="toctree-l1">
+      <a class="reference internal" href="{{ pathto('zh/chap3') }}">3. 社会经济因素</a>
+    </li>
+    <li class="toctree-l1">
+      <a class="reference internal" href="{{ pathto('zh/chap4') }}">4. 钢铁模块：RMC|Steel</a>
+    </li>
+    <li class="toctree-l1">
+      <a class="reference internal" href="{{ pathto('zh/chap5') }}">5. 交通模块：RMC|Transport</a>
+    </li>
+    <li class="toctree-l1">
+      <a class="reference internal" href="{{ pathto('zh/publications') }}">发表论文与研究项目</a>
+    </li>
+    <li class="toctree-l1">
+      <a class="reference internal" href="{{ pathto('zh/references') }}">参考文献</a>
+    </li>
+  </ul>
+{% else %}
+  {# 英文页面使用默认的 toctree #}
+  {{ toctree(maxdepth=theme_navigation_depth|default(4),
+             collapse=theme_collapse_navigation|default(True),
+             includehidden=theme_includehidden|default(True),
+             titles_only=True) }}
+{% endif %}
