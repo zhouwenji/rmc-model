@@ -1,13 +1,3 @@
-.. raw:: html
-
-   <p align="right">
-     <a href="../index.html">
-       <img src="https://img.shields.io/badge/lang-English-blue?style=for-the-badge" alt="English">
-     </a>
-     <a href="index.html">
-       <img src="https://img.shields.io/badge/lang-中文-red?style=for-the-badge" alt="中文">
-     </a>
-   </p>
 
 欢迎访问 RUC-MESSAGEix-China (RMC) 文档！
 ==========================================
