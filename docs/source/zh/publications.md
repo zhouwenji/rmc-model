@@ -1,8 +1,8 @@
-# Publications & Research projects
+# 发表论文与研究项目
 
-A selection of peer-reviewed studies and research initiatives utilizing the RMC series models is presented below.
+以下是利用 RMC 模型开展的论文发表和研究项目。
 
-## Publications
+## 论文
 
 - Shiyu Li, Zanfeng Wang, Wenji Zhou*, Anlan Lin, Hongtao Ren*. **['Provincial employment effects of coal mine retirement in China's carbon-neutral transition.'](https://doi.org/10.1016/j.enpol.2025.115038)** _Energy Policy_, 210, 115038 (2026).
 
@@ -10,16 +10,14 @@ A selection of peer-reviewed studies and research initiatives utilizing the RMC 
 
 - Zuhang Zhang, Wenji Zhou*, Gao Hui, Julian Hunt, Xiao-Bing Zhang, Hongtao Ren, Ping Qin. **['Evaluating the CO2 Emissions Implications of Hydrogen Energy Policies in North China Based on a Dedicated Hydrogen Planning Model.'](https://doi.org/10.1080/14693062.2024.2443451)** _Climate Policy_, 25(8), 1131–1143, (2025).
 
-## Research projects
+## 研究项目
 
-- 国家社会科学基金重点课题(NSSFC), 2026-2028. “现代化产业体系发展对新型能源体系建设的驱动影响与对策研究” (Grant No.: 25AZD032, PI: Prof. Wenji Zhou)
+- 国家社会科学基金重点课题, 2026-2028. “现代化产业体系发展对新型能源体系建设的驱动影响与对策研究” （项目号：25AZD032，负责人：周文戟）
 
-- National Natural Science Foundation of China (NSFC), 2024-2027. 'Asset-stranding Risks on Energy Firms under the Carbon Neutrality Goals and
-Spillover Effects on the Capital Market in mainland China and Hong Kong' (Grant No.: 7231101026, PI: Prof. Wenji Zhou)
+- 国家自然科学基金与香港研究资助局合作研究项目, 2024-2027. “碳中和目标下能源企业的资产搁浅风险及对内地与香港资本市场的影响”（项目号：7231101026，负责人：周文戟）
 
-- National Natural Science Foundation of China (NSFC), 2022-2026. 'System coupling of renewable energy accommodation and hydrogen chemical industry and the synergistic decarbonization pathway' (Grant No.: 7227041030, PI: Prof. Wenji Zhou)
+- 国家自然科学基金面上项目, 2022-2026. “可再生能源消纳与氢化工系统耦合协同脱碳路径研究”（项目号：7227041030，负责人：周文戟）
 
-- Key Program of the National Natural Science Foundation of China (NSFC), 2022-2026. 'Carbon peaking and neutrality goal and the coordinated development of resources, environment and economy in China' (Grant No.: 72141308, PI: Prof. Xinye Zheng)
+- 国家自然科学基金重点专项, 2022-2026. “双碳约束下资源环境经济协同发展研究”（项目号：72141308，负责人：郑新业）
 
-- Key Program of the National Natural Science Foundation of China (NSFC), 2023-2025. 'Research on the multi-dimensional regionally heterogeneous impacts
-from the energy transition under carbon neutrality target and its countermeasures' (Grant No.: 7224100340, PI: Prof. Xi Lu, sub-project leader: Prof. Wenji Zhou)
+- 国家自然科学基金重点专项, 2023-2025. “碳中和能源转型的多维区域异质性影响与应对政策研究”（项目号：7224100340，负责人：鲁玺，子课题负责人：周文戟）
