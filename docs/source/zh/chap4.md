@@ -1,13 +1,18 @@
 # 4. 钢铁模块：RMC|Steel
 
-RUC-MENCEix-China|Steel（RMC|Steel）是RMC模型家族聚焦于钢铁工业的模块，用于分析中国钢铁工业在绿色低碳转型过程中的供需变化、技术组合、能源结构以及对特定能源商品（如氢能）的需求等。模型同样采用MESSAGEix的建模框架，地理分区包括内地31个省级行政单位，以自下而上的方式包含了钢铁领域的主要生产流程和关键技术信息，并已根据产能、产量和技术成本的实际历史数据进行校准。
+RUC-MESSAGEix-China|Steel（RMC|Steel）是 RMC 模型家族聚焦于钢铁工业的模块，用于分析中国钢铁工业在绿色低碳转型过程中的供需变化、技术组合、能源结构以及对特定能源商品（如氢能）的需求等。模型同样采用 MESSAGEix 的建模框架，地理分区包括内地 31 个省级行政单位，以自下而上的方式包含了钢铁领域的主要生产流程和关键技术信息，并已根据产能、产量和技术成本的实际历史数据进行校准。
 
 ## 4.1. 模型结构
 
-<img id='4-1' src="images/01636831a66333fa0f361634bb8f919c3f5dacecad68b0410deb128fecdce5cd.jpg"/>
-<p align="center">图4-1 RMC|Steel模型技术流程连接图</p>
+```{figure} ../_static/fig_4_1.png
+---
+name: Fig. 4-1
+align: center
+---
+图 4-1：RMC|Steel 模型技术流程连接图
+```
 
-如[图4-1](#4-1)所示，RMC|Steel 模型主要对原材料处理、生铁冶炼、粗钢冶炼进行建模，不涉及后续钢卷、钢坯等产品的加工。其中，原材料处理主要包括:
+如{ref}`图 4-1 <Fig. 4-1>` 所示，RMC|Steel 模型主要对原材料处理、生铁冶炼、粗钢冶炼进行建模，不涉及后续钢卷、钢坯等产品的加工。其中，原材料处理主要包括:
 - 炼焦 (coking)  
 - 石灰煅烧（calcin）
 - 铁矿石烧结与球团（sint_pelle）
@@ -24,30 +29,110 @@ RUC-MENCEix-China|Steel（RMC|Steel）是RMC模型家族聚焦于钢铁工业的
 - 以废钢为原料的电弧炉炼钢 (eaf_scrap)  
 - 以（直接还原铁产出的）海绵铁为原料的电弧炉炼钢（eaf_spg）
 
-对于高炉炼铁、直接还原铁和转炉炼钢技术，还可附加碳捕集与封存（CCS）技术以减少碳排放；对于高炉还可进行氢气喷吹装置改造，也以附加技术的形式实现。此外，模型对氢气生产层面做了细致划分，从生产技术角度划分为煤制氢、天然气制氢、电解水制氢，并可附加相应的CCS技术。各项主要技术的输入和输出关系如[表4-1](#表4-1)所示。
-<a id="表4-1"></a>
- 
-<p align="center">表4-1 RMC|Steel 主要技术的输入与输出</p> 
+对于高炉炼铁、直接还原铁和转炉炼钢技术，还可附加碳捕集与封存（CCS）技术以减少碳排放；对于高炉还可进行氢气喷吹装置改造，也以附加技术的形式实现。此外，模型对氢气生产层面做了细致划分，从生产技术角度划分为煤制氢、天然气制氢、电解水制氢，并可附加相应的 CCS 技术。各项主要技术的输入和输出关系如{ref}`表 4-1 <Table 4-1>` 所示。
 
-<table><tr><td>技术</td><td>输入</td><td>输出</td></tr><tr><td>高炉</td><td>焦炭,电力,铁矿石,生石灰</td><td>铁水</td></tr><tr><td>直接还原铁</td><td>氢气,铁矿石</td><td>海绵铁</td></tr><tr><td>转炉</td><td>铁水,电力,生石灰</td><td>粗钢</td></tr><tr><td>电弧炉(海绵铁)</td><td>海绵铁,电力</td><td>粗钢</td></tr><tr><td>电弧炉(废钢)</td><td>废钢、电力</td><td>粗钢</td></tr><tr><td>煤制氢</td><td>煤炭</td><td>氢气</td></tr><tr><td>天然气制氢</td><td>天然气</td><td>氢气</td></tr><tr><td>电解水制氢</td><td>水,电力</td><td>氢气</td></tr></table>
+```{table} 表 4-1：RMC|Steel 主要技术输入与输出
+:name: Table 4-1
+
+| 技术 | 输入 | 输出 |
+| :--- | :--- | :--- |
+| 高炉            | 焦炭，电力，铁矿石，生石灰 | 铁水 |
+| 直接还原铁      | 氢气，铁矿石 | 海绵铁 |
+| 转炉            | 铁水，电力，生石灰 | 粗钢 |
+| 电弧炉（海绵铁）| 海绵铁，电力 | 粗钢 |
+| 电弧炉（废钢）  | 废钢，电力 | 粗钢 |
+| 煤制氢          | 煤炭 | 氢气 |
+| 天然气制氢      | 天然气 | 氢气 |
+| 电解水制氢      | 水，电力 | 氢气 |
+```
 
 
 ## 4.2. 主要参数设置
 
-### 4.2.1. 投资成本
+```{table} 表 4-2：投资成本
+:name: Table 4-2
 
-<table><tr><td>技术</td><td>投资成本</td><td>单位</td><td>来源</td></tr><tr><td>烧结/球团预处理</td><td>45.87</td><td>M$/Mtpa</td><td>Steelonthenet.com,2023</td></tr><tr><td>高温煅烧石灰石</td><td>109.6</td><td>M$/Mtpa</td><td>Chumin,2025</td></tr><tr><td>炼焦</td><td>446.2</td><td>M$/Mtpa</td><td>Reliable Plant,2008</td></tr><tr><td>高炉炼铁</td><td>211</td><td>M$/Mtpa</td><td>IEA-ETSAP,2010</td></tr><tr><td>高炉加装喷吹氢气装置改造</td><td>40</td><td>M$/Mtpa</td><td>-</td></tr><tr><td>高炉加装 CCS</td><td>80.24</td><td>M$/Mtpa</td><td>He et al.,2025;Wanget al.,2025</td></tr><tr><td>氢基直接还原铁</td><td>580</td><td>M$/Mtpa</td><td>Christoph Heinemannet al.,2024</td></tr><tr><td>转炉炼钢</td><td>100</td><td>M$/Mtpa</td><td>IEA-ETSAP,2010</td></tr><tr><td>转炉加装 CCS</td><td>80.24</td><td>M$/Mtpa</td><td>He et al.,2025</td></tr><tr><td>电弧炉(以DRI为主要原料)</td><td>143</td><td>M$/Mtpa</td><td>Steelonthenet.com,2025</td></tr><tr><td>电弧炉(以废钢为主要原料)</td><td>143</td><td>M$/Mtpa</td><td>Steelonthenet.com,2025</td></tr><tr><td>煤制氢</td><td>10692</td><td>M$/Mtpa</td><td>Energy TransitionsCommission,2023;International EnergyAgency,2020</td></tr><tr><td>煤制氢附加 CCS</td><td>444</td><td>M$/Mtpa</td><td>International EnergyAgency,2020</td></tr><tr><td>天然气制氢</td><td>3641.3</td><td>M$/Mtpa</td><td>International EnergyAgency,2020</td></tr><tr><td>天然气制氢附加 CCS</td><td>2693(2050年1488.5)</td><td>M$/Mtpa</td><td>International EnergyAgency,2020</td></tr><tr><td>电解水制氢</td><td>8296.5(2050年3583.1)</td><td>M$/Mtpa</td><td>International EnergyAgency,2020</td></tr></table>
+| 技术 | 投资成本 | 单位 | 来源 |
+| :--- | :--- | :--- | :--- |
+| 烧结/球团预处理 | 45.87 | M$/Mtpa | [Steelonthenet, 2023](./references.md) |
+| 高温煅烧石灰石 | 109.6 | M$/Mtpa | [Chumin, 2025](./references.md) |
+| 炼焦 | 446.2 | M$/Mtpa | [Reliable Plant, 2008](./references.md) |
+| 高炉炼铁 | 211 | M$/Mtpa | [IEA-ETSAP, 2010a](./references.md) |
+| 高炉加装喷吹氢气装置改造 | 40 | M$/Mtpa | - |
+| 高炉加装 CCS 改造 | 80.24 | M$/Mtpa | [He et al., 2025; Wang et al., 2025](./references.md) |
+| 氢基直接还原铁 | 580 | M$/Mtpa | [Christoph Heinemann et al., 2024](./references.md) |
+| 转炉炼钢 | 100 | M$/Mtpa | [IEA-ETSAP, 2010](./references.md) |
+| 转炉加装 CCS 改造 | 80.24 | M$/Mtpa | [He et al., 2025](./references.md) |
+| 电弧炉（海绵铁）| 143 | M$/Mtpa | [Steelonthenet.com, 2025](./references.md) |
+| 电弧炉（废钢） | 143 | M$/Mtpa | [Steelonthenet.com, 2025](./references.md) |
+| 煤制氢 | 10692 | M$/Mtpa | [IEA, 2020; Energy Transitions Commission, 2023](./references.md) |
+| 煤制氢加装 CCS | 444 | M$/Mtpa | [IEA, 2020](./references.md) |
+| 天然气制氢 | 3641.3 | M$/Mtpa | [IEA, 2020](./references.md) |
+| 天然气制氢加装 CCS | 2693<br>(1488.5 in 2050) | M$/Mtpa | [IEA, 2020](./references.md) |
+| 电解水制氢 | 8296.5<br>(3583.1 in 2050) | M$/Mtpa | [IEA, 2020](./references.md) |
+```
 
-其中，tpa为吨/年。
+```{table} 表 4-3：固定运维成本
+:name: Table 4-3
 
-### 4.2.2. 固定运维成本
+| 技术 | 固定运维成本 | 单位 | 来源 |
+| :--- | :--- | :--- | :--- |
+| 烧结/球团预处理 | 1.835 | M$/Mtpa | [Arasto, 2015](./references.md) |
+| 高温煅烧石灰石 | 8.05 | M$/Mtpa | [AGICO Cement Plant Equipment, 2025](./references.md) |
+| 炼焦 | 17.18 | M$/Mtpa | [Gallaher, Depro and Agency, 2002](./references.md) |
+| 高炉炼铁 | 14.14 | M$/Mtpa | [Gallaher, Depro and Agency, 2002; IEA, 2013](./references.md) |
+| 高炉加装喷吹氢气装置改造 | 10 | M$/Mtpa | - |
+| 高炉加装 CCS 改造 | 4.07 | M$/Mtpa | [IEA, 2013](./references.md) |
+| 氢基直接还原铁 | 20 | M$/Mtpa | [Steelonthenet.com, 2025](./references.md) |
+| 转炉炼钢 | 15.45 | M$/Mtpa | [IEA Greenhouse Gas R&D Programme, 2024](./references.md) |
+| 转炉加装 CCS 改造 | 2.16 | M$/Mtpa | [IEA, 2013](./references.md) |
+| 电弧炉（海绵铁） | 81.24 | M$/Mtpa | [Vogl, Åhman and Nilsson, 2018; Benavides et al., 2024](./references.md) |
+| 电弧炉（废钢） | 81.24 | M$/Mtpa | [Vogl, Åhman and Nilsson, 2018; Benavides et al., 2024](./references.md) |
+| 煤制氢 | 433 | M$/Mtpa | [Shao Le et al., 2024](./references.md) |
+| 煤制氢加装 CCS | 18 | M$/Mtpa | - |
+| 天然气制氢 | 454.5 | M$/Mtpa | [Shao Le et al., 2024](./references.md) |
+| 天然气制氢加装 CCS | 50.2 | M$/Mtpa | - |
+| 电解水制氢 | 182.5 | M$/Mtpa | [IEA, 2020](./references.md) |
+```
 
-<table><tr><td>技术名称</td><td>运维成本</td><td>单位</td><td>参考文献</td></tr><tr><td>烧结/球团预处理</td><td>1.835</td><td>M$/Mtpa</td><td>Arasto, 2015</td></tr><tr><td>高温煅烧石灰石</td><td>8.05</td><td>M$/Mtpa</td><td>AGICO Cement Plant Equipment, 2025</td></tr><tr><td>焦化</td><td>17.18</td><td>M$/Mtpa</td><td>Gallaher, Depro and Agency, 2002</td></tr><tr><td>高炉炼铁</td><td>14.14</td><td>M$/Mtpa</td><td>Gallaher, Depro and Agency, 2002; IEA, 2013</td></tr><tr><td>富氢高炉炼铁</td><td>10</td><td>M$/Mtpa</td><td>-</td></tr><tr><td>高炉加装 CCS</td><td>4.07</td><td>M$/Mtpa</td><td>IEA, 2013</td></tr><tr><td>(氢基)直接还原铁</td><td>20</td><td>M$/Mtpa</td><td>Steelonthenet.com, 2025</td></tr><tr><td>转炉炼钢</td><td>15.45</td><td>M$/Mtpa</td><td>IEA Greenhouse Gas R&amp;D Programme, 2024</td></tr><tr><td>转炉加装 CCS</td><td>2.16</td><td>M$/Mtpa</td><td>IEA, 2013</td></tr><tr><td>电弧炉(DRI)</td><td>81.24</td><td>M$/Mtpa</td><td>Vogl, Åhman and Nilsson, 2018; Benavides et al., 2024</td></tr><tr><td>电弧炉(废钢)</td><td>81.24</td><td>M$/Mtpa</td><td>Vogl, Åhman and Nilsson, 2018; Benavides et al., 2024</td></tr><tr><td>煤制氢</td><td>433</td><td>M$/Mtpa</td><td>International Energy Agency, 2020; 邵乐 et al., 2024</td></tr><tr><td>煤制氢加装 CCS</td><td>18</td><td>M$/Mtpa</td><td>/</td></tr><tr><td>天然气制氢</td><td>454.5</td><td>M$/Mtpa</td><td>邵乐 et al., 2024</td></tr><tr><td>天然气制氢加装 CCS</td><td>50.2</td><td>M$/Mtpa</td><td>/</td></tr><tr><td>电解水制氢</td><td>182.5</td><td>M$/Mtpa</td><td>International Energy Agency, 2020</td></tr></table>
+```{table} 表 4-4：可变运维成本
+:name: Table 4-4
 
-### 4.2.3. 可变运维成本
+| 技术 | 可变运维成本 | 单位 | 来源 |
+| :--- | :--- | :--- | :--- |
+| 铁矿石供应 | 110.61 | M$/Mt | [Trading Economics, 2025](./references.md) |
+| 石灰石供应  | 19.59 | M$/Mt | [kq81.com, 2025](./references.md) |
+| 煤炭供应  | 195.89 | M$/Mt | [National Bureau of Statistics of China, 2025](./references.md) |
+| 天然气供应  | 694 | M$/Mt | [CEIC Data, 2025](./references.md) |
+| 电力供应 | 0.085 | M$/GWh | [State-owned Assets Supervision and Administration Commission of the State Council, 2020](./references.md) |
+| 水供应 | 0.676 | M$/Mt | [CEIC Data, 2025](./references.md) |
+| 废钢供应  | 349.8 | M$/Mt | [CSteelNews, 2025](./references.md) |
+| 烧结/球团预处理  | 20 | M$/Mt | [Rahbari et al., 2025](./references.md) |
+| 煤制氢 | 434.1 | M$/Mt | [Shao Le et al., 2024](./references.md) |
+| 煤制氢加装 CCS | 0 | M$/Mt | - |
+| 天然气制氢 | 338.5 | M$/Mt | [Shao Le et al., 2024](./references.md) |
+| 天然气制氢加装 CCS | 0 | M$/Mt | - |
+| 电解水制氢 | 0 | M$/Mt | - |
+```
 
-<table><tr><td>技术名称</td><td>可变成本</td><td>单位</td><td>参考文献</td></tr><tr><td>铁矿石供应</td><td>110.61</td><td>M$/Mt</td><td>Trading Economics, 2025</td></tr><tr><td>石灰石供应</td><td>19.59</td><td>M$/Mt</td><td>矿权资源网, 2025</td></tr><tr><td>煤矿供应</td><td>195.89</td><td>M$/Mt</td><td>国家统计局, 2025</td></tr><tr><td>天然气供应</td><td>694</td><td>M$/Mt</td><td>CEIC Data, 2025</td></tr><tr><td>电力供应</td><td>0.085</td><td>M$/GWh</td><td>国务院国有资产监督管理委员会, 2020; 新浪财经, 2023</td></tr><tr><td>水供应</td><td>0.676</td><td>M$/Mt</td><td>CEIC Data, 2025</td></tr><tr><td>废钢供应</td><td>349.8</td><td>M$/Mt</td><td>《中国冶金报》-中国钢铁新闻网, 2025</td></tr><tr><td>烧结/球团预处理</td><td>20</td><td>M$/Mt</td><td>Rahbari et al., 2025</td></tr><tr><td>煤制氢</td><td>434.1</td><td>M$/Mt</td><td>邵乐 et al., 2024</td></tr><tr><td>天然气制氢</td><td>338.5</td><td>M$/Mt</td><td>邵乐 et al., 2024</td></tr><tr><td>天然气制氢附加 CCS</td><td>0</td><td>M$/Mt</td><td>/</td></tr><tr><td>电解水制氢</td><td>0</td><td>M$/Mt</td><td>/</td></tr></table>
+```{table} 表 4-5：碳排放系数
+:name: Table 4-5
 
-### 4.2.4. 碳排放系数
-
-<table><tr><td>技术名称</td><td>碳排放系数</td><td>单位</td><td>参考文献</td></tr><tr><td>烧结/球团预处理</td><td>0.2</td><td>t-CO2/t-output</td><td>中国钢铁新闻网,2023;赵泽东,李嘉璇,and李原野,2025;steelonthenet,no date</td></tr><tr><td>高温煅烧石灰石</td><td>1</td><td>t-CO2/t-output</td><td>Shenlan Environmental Protection Industry Development Co.,Ltd.,2025</td></tr><tr><td>炼焦</td><td>0.794</td><td>t-CO2/t-output</td><td>Steelonthenet,2025</td></tr><tr><td>高炉炼铁</td><td>1.22</td><td>t-CO2/t-output</td><td>Steelonthenet,2025</td></tr><tr><td>富氢高炉炼铁</td><td>0.67</td><td>t-CO2/t-output</td><td>OECD,2025;Zhang et al.,2024</td></tr><tr><td>高炉加装 CCS</td><td>0.0523</td><td>t-CO2/t-output</td><td>Santos et al.,2013</td></tr><tr><td>(氢基)直接还原铁</td><td>0.04</td><td>t-CO2/t-output</td><td>Rechberger et al.,2020</td></tr><tr><td>转炉炼钢</td><td>0.181</td><td>t-CO2/t-output</td><td>European Commission. Joint Research Centre.,2022;Nancy Margolis &amp; Ross Brindle,2000;steelonthenet,n.d.</td></tr><tr><td>转炉加装 CCS</td><td>0.03</td><td>t-CO2/t-output</td><td>Butterworth,2024</td></tr><tr><td>电弧炉(DRI)</td><td>0.03</td><td>t-CO2/t-output</td><td>European Commission. Joint Research Centre.,2022</td></tr><tr><td>电弧炉(废钢)</td><td>0.03</td><td>t-CO2/t-output</td><td>European Commission. Joint Research Centre.,2022</td></tr><tr><td>煤制氢</td><td>20.1</td><td>t-CO2/t-output</td><td>IEA,2019</td></tr><tr><td>煤制氢加装 CCS</td><td>2.1</td><td>t-CO2/t-output</td><td>IEA,2019</td></tr><tr><td>天然气制氢</td><td>10.13</td><td>t-CO2/t-output</td><td>Baltac et al.,2022</td></tr><tr><td>天然气制氢加装 CCS</td><td>2.32</td><td>t-CO2/t-output</td><td>Baltac et al.,2022</td></tr></table>
+| 技术 | 碳排放系数 | 单位 | 来源 |
+| :--- | :--- | :--- | :--- |
+| 烧结/球团预处理 | 0.2 | t-CO<sub>2</sub>/t-output | [CSteelNews, 2023; Steelonthenet, 2025; ZHAO Zedong, LI Jiaxuan, and LI Yuanye, 2025](./references.md) |
+| 高温煅烧石灰石 | 1 | t-CO<sub>2</sub>/t-output | [Shenlan Environmental Protection Industry Development Co., Ltd., 2025](./references.md) |
+| 炼焦 | 0.794 | t-CO<sub>2</sub>/t-output | [Steelonthenet, 2025](./references.md) |
+| 高炉炼铁 | 1.22 | t-CO<sub>2</sub>/t-output | [Steelonthenet, 2025](./references.md) |
+| 高炉加装喷吹氢气装置改造 | 0.67 | t-CO<sub>2</sub>/t-output | [Zhang et al., 2024; OECD, 2025](./references.md) |
+| 高炉加装 CCS 改造 | 0.0523 | t-CO<sub>2</sub>/t-output | [Santos et al., 2013](./references.md) |
+| 氢基直接还原铁 | 0.04 | t-CO<sub>2</sub>/t-output | [Rechberger et al., 2020](./references.md) |
+| 转炉炼钢 | 0.181 | t-CO<sub>2</sub>/t-output | [Nancy Margolis and Ross Brindle, 2000; European Commission. Joint Research Centre., 2022; steelonthenet, 2025](./references.md) |
+| 转炉加装 CCS 改造 | 0.03 | t-CO<sub>2</sub>/t-output | [Butterworth, 2024](./references.md) |
+| 电弧炉（海绵铁） | 0.03 | t-CO<sub>2</sub>/t-output | [European Commission. Joint Research Centre., 2022](./references.md) |
+| 电弧炉（废钢） | 0.03 | t-CO<sub>2</sub>/t-output | [European Commission. Joint Research Centre., 2022](./references.md) |
+| 煤制氢 | 20.1 | t-CO<sub>2</sub>/t-output | [IEA, 2019](./references.md) |
+| 煤制氢加装 CCS | 2.1 | t-CO<sub>2</sub>/t-output | [IEA, 2019](./references.md) |
+| 天然气制氢 | 10.13 | t-CO<sub>2</sub>/t-output | [Baltac et al., 2022](./references.md) |
+| 天然气制氢加装 CCS | 2.32 | t-CO<sub>2</sub>/t-output |[Baltac et al., 2022](./references.md) |
+```
