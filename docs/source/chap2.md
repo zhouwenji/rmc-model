@@ -188,7 +188,7 @@ Spatially, wind-rich areas are primarily concentrated in western, northern, and 
 | Beijing | 0 | 0 | 0 | 61 | 2 | 59 | 0 | 72 |
 | Hebei | 334 | 281 | 53 | 338 | 59 | 279 | 988 | 587 |
 | Shandong | 596 | 296 | 300 | 417 | 21 | 395 | 1636 | 552 |
-| Shanxi | 127 | 127 | 0 | 311 | 194 | 117 | 364 | 439 |
+| Shaanxi | 127 | 127 | 0 | 311 | 194 | 117 | 364 | 439 |
 | Tianjin | 15 | 11 | 4 | 42 | 0 | 42 | 42 | 50 |
 | Chongqing | 43 | 43 | 0 | 22 | 1 | 21 | 108 | 3 |
 | Guizhou | 109 | 109 | 0 | 104 | 76 | 28 | 296 | 105 |
