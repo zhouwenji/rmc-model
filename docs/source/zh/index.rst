@@ -17,4 +17,4 @@ RUC-MESSAGEix-China (RMC) 模型是基于开源建模框架 MESSAGEix （`IIASA 
    ./references
 
 
-`PDF 版本（2025年10月更新） <../_static/2025.10.27-RMC-documentation-cn.pdf>`_
+`PDF 版本（2025年10月更新） <../_static/2025.10.27-RMC documentation-cn.pdf>`_
