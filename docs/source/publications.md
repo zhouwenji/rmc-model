@@ -14,9 +14,9 @@ A selection of peer-reviewed studies and research initiatives utilizing the RMC 
 
 - Key Program of the National Social Science Fund of China (NSSFC), 2026-2028. 'The impact of modern industrial system development on the construction of a new energy system and the corresponding countermeasures' (Grant No.: 25AZD032, PI: Prof. Wenji Zhou)<br><br>
 
-- National Natural Science Foundation of China (NSFC), 2024-2027. 'Asset-stranding Risks on Energy Firms under the Carbon Neutrality Goals and Spillover Effects on the Capital Market in mainland China and Hong Kong' (Grant No.: 7231101026, PI: Prof. Wenji Zhou)<br><br>
+- National Natural Science Foundation of China (NSFC), 2024-2027. 'Asset-stranding Risks on Energy Firms under the Carbon Neutrality Goals and Spillover Effects on the Capital Market in mainland China and Hong Kong' (Grant No.: 72361167635, PI: Prof. Wenji Zhou)<br><br>
 
-- National Natural Science Foundation of China (NSFC), 2022-2026. 'System coupling of renewable energy accommodation and hydrogen chemical industry and the synergistic decarbonization pathway' (Grant No.: 7227041030, PI: Prof. Wenji Zhou)<br><br>
+- National Natural Science Foundation of China (NSFC), 2022-2026. 'System coupling of renewable energy accommodation and hydrogen chemical industry and the synergistic decarbonization pathway' (Grant No.: 72274204, PI: Prof. Wenji Zhou)<br><br>
 
 - Key Program of the National Natural Science Foundation of China (NSFC), 2022-2026. 'Carbon peaking and neutrality goal and the coordinated development of resources, environment and economy in China' (Grant No.: 72141308, PI: Prof. Xinye Zheng)<br><br>
 
