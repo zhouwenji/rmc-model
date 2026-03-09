@@ -20,4 +20,4 @@ A selection of peer-reviewed studies and research initiatives utilizing the RMC 
 
 - Key Program of the National Natural Science Foundation of China (NSFC), 2022-2026. 'Carbon peaking and neutrality goal and the coordinated development of resources, environment and economy in China' (Grant No.: 72141308, PI: Prof. Xinye Zheng)<br><br>
 
-- Key Program of the National Natural Science Foundation of China (NSFC), 2023-2025. 'Research on the multi-dimensional regionally heterogeneous impacts from the energy transition under carbon neutrality target and its countermeasures' (Grant No.: 7224100340, PI: Prof. Xi Lu, sub-project leader: Prof. Wenji Zhou)<br><br>
+- Key Program of the National Natural Science Foundation of China (NSFC), 2023-2025. 'Research on the multi-dimensional regionally heterogeneous impacts from the energy transition under carbon neutrality target and its countermeasures' (Grant No.: 72243007, PI: Prof. Xi Lu, sub-project leader: Prof. Wenji Zhou)<br><br>
