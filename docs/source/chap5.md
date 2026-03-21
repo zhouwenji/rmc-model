@@ -1,6 +1,6 @@
 # 5. Transport module: RMC|Transport
 
-RMC|Transport is a module within the RMC model family focused on the transportation sector, designed to analyze supply-demand dynamics, technology and energy mix, carbon emissions, and other impacts (such as critical metal demand) during the low-carbon transition of China’s transportation sector. Different from the main RMC model, the transportation module employs a stock-flow system dynamics approach. Its geographical coverage includes 31 provincial-level administrative units in mainland China. It incorporates, in a bottom-up manner, major production processes and key technological information relevant to the transportation sector, and has been calibrated based on historical data for vehicle stocks, activity levels, and technology costs.
+RMC|Transport is a module within the RMC model family focused on the transportation sector, designed to analyze supply-demand dynamics, technology and energy mix, carbon emissions, and other impacts (such as critical metal demand) during the low-carbon transition of China’s transportation sector. Different from the main RMC model, the transportation module employs a stock-flow system dynamics approach. Its geographical coverage includes 31 provincial-level administrative units in mainland China. It incorporates, in a bottom-up manner, major key technological information, energy consumption and GHG emissions relevant to the transportation sector, and has been calibrated based on historical data for vehicle stocks, activity levels, and technology costs.
 
 ## 5.1. Model structure
 
